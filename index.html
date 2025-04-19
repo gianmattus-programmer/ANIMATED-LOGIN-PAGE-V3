@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!--Creado por Gianmattus-Programmer-->
+<head>
+    <!-- Inicio de la sección head - Metadatos y enlaces -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Techno White Fang</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Fin de la sección head -->
+</head>
+<body>
+    <!-- Inicio del contenedor principal -->
+    <div class="container">
+        <!-- Inicio del formulario de inicio de sesión -->
+        <div class="form-box login">
+            <form action="" aria-label="Formulario de inicio de sesión">
+                <h1>Iniciar Sesión</h1>
+                <div class="input-box">
+                    <label for="loginUsername">Usuario</label>
+                    <input type="text" id="loginUsername" placeholder="Usuario" required autocomplete="username">
+                    <i class="bx bxs-user"></i>
+                </div>
+                <div class="input-box">
+                    <label for="loginPassword">Contraseña</label>
+                    <input type="password" id="loginPassword" placeholder="Contraseña" required autocomplete="current-password">
+                    <i class="bx bxs-lock-alt"></i>
+                    <button type="button" class="toggle-password" aria-label="Mostrar contraseña">
+                        <i class="bx bx-show"></i>
+                    </button>
+                </div>
+                <div class="forgot-link">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+                <button type="submit" class="btn">Iniciar Sesión</button>
+                <p>o Inicia Sesión con Redes Sociales</p>
+                <div class="social-icons">
+                    <a href="#"><i class="bx bxl-google"></i></a>
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-github"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </form>
+        </div>
+        <!-- Fin del formulario de inicio de sesión -->
+
+        <!-- Inicio del formulario de registro -->
+        <div class="form-box register">
+            <form action="" aria-label="Formulario de registro">
+                <h1>Registro</h1>
+                <div class="input-box">
+                    <label for="registerUsername">Usuario</label>
+                    <input type="text" id="registerUsername" placeholder="Usuario" required autocomplete="username">
+                    <i class="bx bxs-user"></i>
+                </div>
+                <div class="input-box">
+                    <label for="registerEmail">Correo electrónico</label>
+                    <input type="email" id="registerEmail" placeholder="Correo electrónico" required autocomplete="email">
+                    <i class="bx bxs-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <label for="registerPassword">Contraseña</label>
+                    <input type="password" id="registerPassword" placeholder="Contraseña" required 
+                           pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+                           title="La contraseña debe tener al menos 8 caracteres, una letra, un número y un carácter especial">
+                    <i class="bx bxs-lock-alt"></i>
+                    <button type="button" class="toggle-password" aria-label="Mostrar contraseña">
+                        <i class="bx bx-show"></i>
+                    </button>
+                </div>
+                <div class="input-box">
+                    <label for="confirmPassword">Confirmar Contraseña</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirmar Contraseña" required>
+                    <i class="bx bxs-lock-alt"></i>
+                </div>
+                <div class="password-strength" aria-live="polite"></div>
+                <button type="submit" class="btn">Registrarse</button>
+                <p>o Regístrate con Redes Sociales</p>
+                <div class="social-icons">
+                    <a href="#"><i class="bx bxl-google"></i></a>
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-github"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </form>
+        </div>
+        <!-- Fin del formulario de registro -->
+
+        <!-- Inicio del panel de cambio entre formularios -->
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>¡Hola, Bienvenido!</h1>
+                <p>¿No tienes una cuenta?</p>
+                <button class="btn register-btn">Registrarse</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>¡Bienvenido de nuevo!</h1>
+                <p>¿Ya tienes una cuenta?</p>
+                <button class="btn login-btn">Iniciar Sesión</button>
+            </div>
+        </div>
+        <!-- Fin del panel de cambio entre formularios -->
+    </div>
+    <!-- Fin del contenedor principal -->
+
+    <!-- Enlace al archivo de scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
